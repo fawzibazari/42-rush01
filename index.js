@@ -15,6 +15,7 @@ class countCrates {
   }
 
   solver() {
+    // i map on columnUp because its length matches that of the other rows and columns
     for (let index = 0; index < this.columnsUp.length; index++) {
       const leftView = this.rowsLeft[index];
       const rightView = this.rowsRight[index];
